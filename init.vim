@@ -1,0 +1,5 @@
+inoremap <special> jk <ESC>
+
+
+
+
