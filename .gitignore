@@ -1,2 +1,5 @@
-./autoload/
-./plugged/
+autoload/
+
+plugged/
+
+plugged/nerdtree

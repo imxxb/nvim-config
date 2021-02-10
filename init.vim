@@ -7,6 +7,9 @@ syntax on
 call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline'
+Plug 'vimwiki/vimwiki'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -42,3 +45,13 @@ set ignorecase
 " " 智能分辨搜索大小写
 set smartcase
 " noremap <LEADER>sq :nohlsearch <CR>
+"
+"
+" vimwiki
+ let g:vimwiki_list = [
+             \{"path": "~/Documents/brain4-as-md/", 
+             \ "path_html": "~/Public/brain4-as-md/",
+             \ "syntax": "markdown", 
+             \ "ext": ".md",
+             \ "auto_export": 0}
+             \]
