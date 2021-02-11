@@ -1,4 +1,5 @@
 inoremap <special> jk <ESC>
+let mapleader = "\<space>"
 
 set nocompatible
 filetype plugin on
@@ -55,3 +56,6 @@ set smartcase
              \ "ext": ".md",
              \ "auto_export": 0}
              \]
+
+
+ iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
