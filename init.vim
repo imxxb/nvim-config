@@ -48,14 +48,10 @@ set smartcase
 " noremap <LEADER>sq :nohlsearch <CR>
 "
 "
-" vimwiki
- let g:vimwiki_list = [
-             \{"path": "~/Documents/brain4-as-md/", 
-             \ "path_html": "~/Public/brain4-as-md/",
-             \ "syntax": "markdown", 
-             \ "ext": ".md",
-             \ "auto_export": 0}
-             \]
 
+" vimwiki
+source $HOME/.config/nvim/modules/vimwiki.vim
 
  iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
+ noremap <leader>ef :e $HOME/.config/nvim/init.vim<cr>
+ noremap <leader>er :source $HOME/.config/nvim/init.vim<crk
