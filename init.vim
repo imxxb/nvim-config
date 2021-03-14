@@ -54,4 +54,4 @@ source $HOME/.config/nvim/modules/vimwiki.vim
 
  iab xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
  noremap <leader>ef :e $HOME/.config/nvim/init.vim<cr>
- noremap <leader>er :source $HOME/.config/nvim/init.vim<crk
+ noremap <leader>er :source $HOME/.config/nvim/init.vim<cr>
